@@ -1,27 +1,5 @@
-.up {
-  a {
-    font-size: 450px;
-    color: black;
-    font-weight: bold;
-    &:hover {
-      color: black;
-    }
-  }
-}
-
-.down {
-  a {
-    font-size: 450px;
-    color: yellow;
-    font-weight: bold;
-    &:hover {
-      color: yellow;
-    }
-  }
-}
-
 .marquee {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
@@ -35,7 +13,7 @@
   text-indent: 0;
   animation: marquee 15s linear infinite;
 }
-a .marquee span:hover {
+.marquee span:hover {
   -webkit-animation-play-state: paused;
   -moz-animation-play-state: paused;
   -o-animation-play-state: paused;
@@ -47,3 +25,4 @@ a .marquee span:hover {
   0%   { transform: translate(0, 0); }
   100% { transform: translate(0, -100%); }
 }
+

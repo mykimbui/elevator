@@ -1,0 +1,58 @@
+.up {
+  height: 420px;
+  overflow: hidden;
+  position: relative;
+  background-color: yellow;
+  a {
+    font-size: 250px;
+    color: black;
+    font-weight: bold;
+    &:hover {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+.up a {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ font-size: 250px;
+ line-height: auto;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateY(100%);
+ -webkit-transform:translateY(100%);
+ transform:translateY(100%);
+ /* Apply animation to this element */
+ -moz-animation: up 10s linear infinite;
+ -webkit-animation: up 10s linear infinite;
+ animation: up 10s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes up {
+ 0%   { -moz-transform: translateY(100%); }
+ 100% { -moz-transform: translateY(-100%); }
+}
+@-webkit-keyframes up {
+ 0%   { -webkit-transform: translateY(100%); }
+ 100% { -webkit-transform: translateY(-100%); }
+}
+@keyframes up {
+ 0%   {
+ -moz-transform: translateY(100%); /* Firefox bug fix */
+ -webkit-transform: translateY(100%); /* Firefox bug fix */
+ transform: translateY(100%);
+}
+100% {
+ -moz-transform: translateY(-100%); /* Firefox bug fix */
+ -webkit-transform: translateY(-100%); /* Firefox bug fix */
+ transform: translateY(-100%);
+}
+}
+.up a:hover {
+ -moz-animation-play-state: paused;
+ -webkit-animation-play-state: paused;
+ animation-play-state: paused;
+}
