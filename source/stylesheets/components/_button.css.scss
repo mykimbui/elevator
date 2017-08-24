@@ -1,0 +1,52 @@
+.upp {
+  animation: scrollUp 5s linear 0s infinite;
+  position: absolute;
+}
+
+#resultStats {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(0,-100px);
+  }
+}
+
+.downn {
+  animation: scrollDown 5s linear 0s infinite;
+  position: absolute;
+  font-size: 250px;
+  line-height: auto;
+}
+
+
+@keyframes scrollDown {
+  0% {
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(0, 300px);
+  }
+}
+
+.downer {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(red, blue);
+  a {
+    font-size: 250px;
+    color: black;
+    text-decoration: none;
+    &:hover {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}

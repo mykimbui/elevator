@@ -1,0 +1,31 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.containerup {
+  width: 100vw;
+  height: 50vh;
+  background: linear-gradient(red, blue);
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.containerdown {
+  width: 100vw;
+  height: 50vh;
+  background: linear-gradient(red, blue);
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.up-text{
+  display: inline-block;
+  font-size: 250px;
+  margin: 15px;
+}
+
+.down-text{
+  display: inline-block;
+  font-size: 250px;
+  margin: 15px;
+}
