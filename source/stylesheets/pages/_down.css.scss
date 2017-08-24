@@ -1,15 +1,14 @@
 .down {
-  height: 420px;
+  height: 400px;
   overflow: hidden;
   position: relative;
-  background-color: black;
+  background: linear-gradient(red, blue);
   a {
     font-size: 250px;
-    color: yellow;
-    font-weight: bold;
+    color: black;
     text-decoration: none;
     &:hover {
-      color: yellow;
+      color: black;
       text-decoration: none;
     }
   }
@@ -23,9 +22,9 @@
  line-height: auto;
  text-align: center;
  /* Starting position */
- -moz-transform:translateY(100%);
- -webkit-transform:translateY(100%);
- transform:translateY(100%);
+ -moz-transform:translateY(0);
+ -webkit-transform:translateY(0);
+ transform:translateY(0);
  /* Apply animation to this element */
  -moz-animation: down 10s linear infinite;
  -webkit-animation: down 10s linear infinite;
@@ -34,11 +33,11 @@
 /* Move it (define the animation) */
 @-moz-keyframes down {
  0%   { -moz-transform: translateY(-100%); }
- 100% { -moz-transform: translateY(100%); }
+ 100% { -moz-transform: translateY(0); }
 }
 @-webkit-keyframes down {
  0%   { -webkit-transform: translateY(-100%); }
- 100% { -webkit-transform: translateY(100%); }
+ 100% { -webkit-transform: translateY(0); }
 }
 @keyframes down {
  0%   {
@@ -47,9 +46,9 @@
  transform: translateY(-100%);
 }
 100% {
- -moz-transform: translateY(100%); /* Firefox bug fix */
- -webkit-transform: translateY(100%); /* Firefox bug fix */
- transform: translateY(100%);
+ -moz-transform: translateY(0); /* Firefox bug fix */
+ -webkit-transform: translateY(0); /* Firefox bug fix */
+ transform: translateY(0);
 }
 }
 .down a:hover {

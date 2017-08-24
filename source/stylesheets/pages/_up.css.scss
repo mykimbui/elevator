@@ -1,12 +1,11 @@
 .up {
-  height: 420px;
+  height: 400px;
   overflow: hidden;
   position: relative;
-  background-color: yellow;
+  background: linear-gradient(red, blue);
   a {
     font-size: 250px;
     color: black;
-    font-weight: bold;
     text-decoration: none;
     &:hover {
       color: black;
