@@ -6,7 +6,9 @@ body{
   width: 100vw;
   height: 50vh;
   background: linear-gradient(red, blue);
-  overflow: hidden;
+  // background-color: yellow;
+  // color: black;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -14,18 +16,21 @@ body{
   width: 100vw;
   height: 50vh;
   background: linear-gradient(red, blue);
-  overflow: hidden;
+  // background-color: black;
+  // color: yellow;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
-.up-text{
+.up-text, .down-text {
   display: inline-block;
   font-size: 250px;
   margin: 15px;
-}
-
-.down-text{
-  display: inline-block;
-  font-size: 250px;
-  margin: 15px;
+  a {
+    text-decoration: none;
+    color: $gray-darker;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }

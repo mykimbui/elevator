@@ -20,3 +20,4 @@ gem 'middleman-deploy', '~> 1.0'
 gem 'jquery-middleman'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
+gem "middleman-favicon-maker", "~> 4.0"
