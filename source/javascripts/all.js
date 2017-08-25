@@ -28,6 +28,3 @@ $(document).ready(function() {
   TweenMax.fromTo('.content-containerdown', 8, {y: - linesNeededDown * downHeight, ease: Linear.easeNone, repeat: -1}, {y: 0, ease: Linear.easeNone, repeat: -1});
 
 });
-
-
-

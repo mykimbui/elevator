@@ -35,6 +35,17 @@ body{
   }
 }
 
+.out {
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
 .hideme {
   // position: absolute;
   // top: 0;
