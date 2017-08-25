@@ -8,7 +8,7 @@ $(document).ready(function() {
   var $contentContainerUp = $('.content-containerup')
   var upWidth = upElement.width();
   var upHeight = upElement.height() + 30;
-  var containerWidth = $containerUp.width() * 2;
+  var containerWidth = $containerUp.width();
   var containerHeight = $containerUp.height();
   var upsNeeded = Math.floor(containerWidth / upWidth) * Math.ceil(containerHeight/upHeight) * 2;
   Array(upsNeeded).fill('').map(i=>$contentContainerUp.append(upElement.clone()));
@@ -20,12 +20,12 @@ $(document).ready(function() {
   var $contentContainerDown = $('.content-containerdown')
   var downWidth = downElement.width();
   var downHeight = downElement.height() + 30;
-  var containerWidthDown = $containerDown.width() * 2;
+  var containerWidthDown = $containerDown.width();
   var containerHeightDown = $containerDown.height();
   var downsNeeded = Math.floor(containerWidthDown / downWidth) * Math.ceil(containerHeightDown/downHeight) * 2;
   Array(downsNeeded).fill('').map(i=>$contentContainerDown.append(downElement.clone()));
   var linesNeededDown = Math.ceil(containerHeightDown/downHeight);
-  TweenMax.to('.content-containerdown', 8, {y: linesNeededDown * downHeight, ease: Linear.easeNone, repeat: -1});
+  TweenMax.fromTo('.content-containerdown', 8, {y: - linesNeededDown * downHeight, ease: Linear.easeNone, repeat: -1}, {y: 0, ease: Linear.easeNone, repeat: -1});
 
 });
 
