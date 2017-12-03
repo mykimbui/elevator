@@ -12,3 +12,7 @@
 @import "components/*";
 @import "pages/*";
 @import "vendor/*";
+
+html, body {
+  overflow-x: hidden;
+}
